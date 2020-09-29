@@ -1,5 +1,5 @@
 //Given an array of integers and a number x, find the smallest subarray with sum greater than the given value.
-//Time Complexity : O(n^2)
+//Time Complexity :  O(n^2)
 package Problems;
 
 public class SmallestSubArraySum {
