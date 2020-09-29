@@ -23,6 +23,7 @@ public class RunLengthEncoding {
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();
 		printString(s);
+		in.close();
 	}
 
 }
