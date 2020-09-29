@@ -34,7 +34,7 @@ public class JumpSearch {
 		int x = 55;		
 		int result = search(arr, x);		
 		if(result == -1) {
-			System.out.println("Element not found");
+			System.out.println("Element not found anywhere");
 		}
 		else {
 			System.out.println("Element found at position : "+result);
