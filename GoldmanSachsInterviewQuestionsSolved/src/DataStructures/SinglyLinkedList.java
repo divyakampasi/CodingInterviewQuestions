@@ -46,6 +46,25 @@ public class SinglyLinkedList {
 		last.next = new_node;
 		return;
 	}
+	
+	void deleteNode(int key) {
+		Node temp = head, prev=null;
+		
+		if(temp!=null && temp.data == key) {
+			head = temp.next;
+			return;
+		}
+		
+		while(temp!=null && temp.data!=key) {
+			prev=temp;
+			temp=temp.next;
+		}
+		
+		if(temp == null) return;
+		prev.next=temp.next;
+		
+		
+	}
 
 	public void printList() {
 		Node n = head;
@@ -66,7 +85,7 @@ public class SinglyLinkedList {
 		l.push(5);
 		l.append(7);
 		l.insertAfter(l.head.next, 8);
-
+		l.deleteNode(1);
 		l.printList();
 	}
 
